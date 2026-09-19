@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Veda – Your Smart Companion for Competitive Exam Preparation</title>
+    <meta name="description" content="Download Exam Veda Android APK. Comprehensive notes, mock tests, previous year questions (PYQs), and topic-wise practice for competitive and government exams." />
+    
+    <!-- OpenGraph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Exam Veda – Smart Companion for Competitive Exam Preparation" />
+    <meta property="og:description" content="Study notes, mock tests, previous year questions, and bilingual quizzes in one organized Android app. Download the latest APK directly." />
+    <meta property="og:site_name" content="Exam Veda" />
+    
+    <!-- Twitter Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Exam Veda – Android App for Competitive Exams" />
+    <meta name="twitter:description" content="Download the latest Exam Veda Android APK for notes, mock tests, PYQs, and topic quizzes." />
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg" />
+    <meta property="og:image" content="/logo.svg" />
+    <meta name="twitter:image" content="/logo.svg" />
+
+    <!-- Theme Initialization Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('exam_veda_theme');
+          var isDark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Schema.org SoftwareApplication JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Exam Veda",
+      "operatingSystem": "Android",
+      "applicationCategory": "EducationalApplication",
+      "fileSize": "5.42 MB",
+      "downloadUrl": "https://files.catbox.moe/t5nqk6.apk",
+      "description": "Exam Veda is a study app for students preparing for competitive and government exams, featuring Notes, Mock Tests, PYQs, and quizzes in Hindi and English.",
+      "author": {
+        "@type": "Person",
+        "name": "Aarav Malik"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen antialiased selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

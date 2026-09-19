@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2DFD8" />
+      <stop offset="50%" stop-color="#D5D0C7" />
+      <stop offset="100%" stop-color="#C2BCB0" />
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DE9E78" />
+      <stop offset="100%" stop-color="#C58560" />
+    </linearGradient>
+    <linearGradient id="skinShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B27450" />
+      <stop offset="100%" stop-color="#9C623F" />
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242830" />
+      <stop offset="100%" stop-color="#14171C" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2A221E" />
+      <stop offset="100%" stop-color="#120E0C" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background with warm window light -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Subtle window grid shadow in background -->
+  <path d="M-20,40 L160,180 L140,220 L-40,80 Z" fill="url(#windowLight)" />
+  <path d="M-20,120 L160,260 L140,300 L-40,160 Z" fill="url(#windowLight)" />
+
+  <!-- Background Plant on right -->
+  <path d="M370,320 Q350,260 380,180 Q390,250 395,330 Z" fill="#4B634E" opacity="0.6" />
+  <path d="M385,340 Q330,280 340,210 Q360,270 395,350 Z" fill="#3D5240" opacity="0.5" />
+  <path d="M390,360 Q320,310 310,240 Q340,300 400,370 Z" fill="#354737" opacity="0.4" />
+
+  <!-- Torso & Shoulders -->
+  <g id="body">
+    <!-- Black Shirt -->
+    <path d="M80,350 C95,290 135,270 170,265 L200,285 L230,265 C265,270 305,290 320,350 L340,400 L60,400 Z" fill="url(#shirtGrad)" filter="url(#shadow)" />
+    
+    <!-- White Undershirt -->
+    <path d="M165,266 C175,295 225,295 235,266 C225,275 175,275 165,266 Z" fill="#F4F4F6" />
+    <path d="M172,270 C180,290 220,290 228,270 Z" fill="#E2E2E6" />
+
+    <!-- Shirt Collars (Open black button-up) -->
+    <path d="M150,265 L180,325 L200,285 L175,262 Z" fill="#2E333D" />
+    <path d="M250,265 L220,325 L200,285 L225,262 Z" fill="#1C2026" />
+    
+    <!-- Shirt Buttons & Placket -->
+    <path d="M196,285 L204,285 L204,400 L196,400 Z" fill="#181B20" />
+    <circle cx="200" cy="335" r="3" fill="#383E48" />
+    <circle cx="200" cy="370" r="3" fill="#383E48" />
+  </g>
+
+  <!-- Neck -->
+  <g id="neck">
+    <path d="M174,210 L174,275 C185,282 215,282 226,275 L226,210 Z" fill="url(#skinShadow)" />
+    <path d="M178,210 L178,268 C190,274 210,274 222,268 L222,210 Z" fill="url(#skinGrad)" />
+    <!-- Neck Adam's apple shadow -->
+    <path d="M196,238 Q200,244 204,238 Q200,248 196,238 Z" fill="#AA6A45" opacity="0.6" />
+  </g>
+
+  <!-- Head & Ears -->
+  <g id="head">
+    <!-- Ears -->
+    <path d="M142,165 C132,165 130,195 145,202 Z" fill="url(#skinShadow)" />
+    <path d="M143,170 C136,172 136,190 145,195 Z" fill="#BD7D56" />
+
+    <path d="M258,165 C268,165 270,195 255,202 Z" fill="url(#skinShadow)" />
+    <path d="M257,170 C264,172 264,190 255,195 Z" fill="#BD7D56" />
+
+    <!-- Face Oval -->
+    <path d="M144,145 C144,95 256,95 256,145 C256,200 240,240 200,242 C160,240 144,200 144,145 Z" fill="url(#skinGrad)" filter="url(#shadow)" />
+
+    <!-- Jawline definition & cheek shading -->
+    <path d="M152,185 C165,228 185,240 200,241 C215,240 235,228 248,185 C240,220 220,236 200,237 C180,236 160,220 152,185 Z" fill="#B97852" opacity="0.7" />
+
+    <!-- Eyebrows (Thick, well-groomed dark brows) -->
+    <path d="M160,140 Q175,134 190,140 Q175,137 160,140 Z" fill="#181310" stroke="#181310" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M240,140 Q225,134 210,140 Q225,137 240,140 Z" fill="#181310" stroke="#181310" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Eyes (Warm brown, focused gaze) -->
+    <!-- Left Eye -->
+    <path d="M163,152 Q175,146 187,152 Q175,158 163,152 Z" fill="#FFFFFF" />
+    <ellipse cx="175" cy="152" rx="4.5" ry="4.5" fill="#422718" />
+    <circle cx="175" cy="152" r="2.5" fill="#110A06" />
+    <circle cx="176.5" cy="150.5" r="1" fill="#FFFFFF" />
+    <path d="M162,151 Q175,145 188,151" stroke="#221812" stroke-width="1.5" fill="none" />
+
+    <!-- Right Eye -->
+    <path d="M213,152 Q225,146 237,152 Q225,158 213,152 Z" fill="#FFFFFF" />
+    <ellipse cx="225" cy="152" rx="4.5" ry="4.5" fill="#422718" />
+    <circle cx="225" cy="152" r="2.5" fill="#110A06" />
+    <circle cx="226.5" cy="150.5" r="1" fill="#FFFFFF" />
+    <path d="M212,151 Q225,145 238,151" stroke="#221812" stroke-width="1.5" fill="none" />
+
+    <!-- Nose -->
+    <path d="M198,146 L195,180 Q192,187 200,187 Q208,187 205,180 L202,146" fill="none" stroke="#B87650" stroke-width="1.5" />
+    <path d="M192,184 Q200,189 208,184" fill="none" stroke="#9E613D" stroke-width="2" stroke-linecap="round" />
+    <ellipse cx="193" cy="184" rx="2" ry="1.5" fill="#8E5432" opacity="0.7" />
+    <ellipse cx="207" cy="184" rx="2" ry="1.5" fill="#8E5432" opacity="0.7" />
+
+    <!-- Subtle mustache shadow -->
+    <path d="M188,196 Q200,194 212,196 Q200,198 188,196 Z" fill="#825134" opacity="0.45" />
+
+    <!-- Lips -->
+    <path d="M185,206 Q200,203 215,206 Q200,209 185,206 Z" fill="#AA614D" />
+    <path d="M187,206 Q200,214 213,206" fill="none" stroke="#8E4838" stroke-width="1.5" />
+  </g>
+
+  <!-- Hair (Voluminous, textured modern dark quiff) -->
+  <g id="hair" filter="url(#shadow)">
+    <path d="M140,140 C135,115 140,85 165,70 C185,58 220,55 240,65 C258,75 265,95 262,130 C260,110 252,95 235,90 C215,84 185,86 168,96 C155,104 148,118 148,135 Z" fill="url(#hairGrad)" />
+    
+    <!-- Top voluminous hair puffs -->
+    <path d="M142,125 C132,100 145,68 175,55 C205,42 245,50 258,72 C270,90 268,118 260,140 C258,112 250,88 230,78 C205,65 170,70 152,95 C146,105 144,115 142,125 Z" fill="#1C1613" />
+    <path d="M160,75 Q185,45 220,52 Q250,58 255,80 Q230,62 195,62 Q170,62 160,75 Z" fill="#2D231E" />
+    <path d="M150,100 Q165,65 200,60 Q175,75 160,105 Z" fill="#382C26" opacity="0.6" />
+    <path d="M210,58 Q240,65 255,90 Q245,75 225,68 Z" fill="#382C26" opacity="0.6" />
+    
+    <!-- Forehead hairline texture -->
+    <path d="M150,130 C155,110 170,105 185,108 C200,106 220,102 245,115 C252,125 255,135 256,140 C250,130 242,120 230,118 C215,116 195,118 180,122 C165,126 155,130 150,130 Z" fill="#1A1411" />
+  </g>
+</svg>
