@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Download, Sun, Moon, Menu, X, Smartphone } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 import { useTheme } from '../context/ThemeContext';
-import { ExamVedaLogo } from './ExamVedaLogo';
+import { EduVedaLogo } from './EduVedaLogo';
 
 interface HeaderProps {
   onOpenPrivacy: () => void;
@@ -57,7 +57,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPrivacy }) => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg p-1"
           >
-            <ExamVedaLogo size={42} className="group-hover:scale-105 transition-transform duration-200" />
+            <EduVedaLogo size={42} className="group-hover:scale-105 transition-transform duration-200" />
             <div className="flex flex-col">
               <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
                 {siteConfig.appName}
@@ -158,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenPrivacy }) => {
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/20"
             >
               <Download className="w-4 h-4" />
-              <span>Download Exam Veda APK</span>
+              <span>Download {siteConfig.appName} APK</span>
             </a>
             <button
               onClick={() => {

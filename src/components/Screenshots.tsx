@@ -41,7 +41,7 @@ export const Screenshots: React.FC = () => {
             App Screenshots & Interface
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300">
-            A real look into the Exam Veda Android interface — clean chapters, bilingual mock tests, and smart AI study assistance.
+            A real look into the {siteConfig.appName} Android interface — clean chapters, bilingual mock tests, and smart AI study assistance.
           </p>
         </div>
 

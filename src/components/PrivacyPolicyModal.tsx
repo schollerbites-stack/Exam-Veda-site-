@@ -35,7 +35,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
                 Privacy Policy
               </h2>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Exam Veda • Last updated {privacyPolicy.lastUpdated}
+                {siteConfig.appName} • Last updated {privacyPolicy.lastUpdated}
               </p>
             </div>
           </div>
@@ -52,7 +52,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
         {/* Scrollable Policy Body */}
         <div className="overflow-y-auto py-5 space-y-6 text-sm text-slate-600 dark:text-slate-300 leading-relaxed pr-2">
           <div className="p-3.5 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/50 text-xs text-blue-800 dark:text-blue-200">
-            This Privacy Policy applies to the <strong>Exam Veda</strong> mobile application and official download website developed by <strong>{siteConfig.developer.name}</strong>.
+            This Privacy Policy applies to the <strong>{siteConfig.appName}</strong> mobile application and official download website developed by <strong>{siteConfig.developer.name}</strong>.
           </div>
 
           {privacyPolicy.sections.map((section, idx) => (

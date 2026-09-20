@@ -48,6 +48,7 @@ export interface SiteConfig {
   appType: string;
   apkDownloadUrl: string;
   apkDownloadNote: string;
+  apkFileName?: string;
   versionDisplay?: string; // Optional if provided
   developer: DeveloperConfig;
   features: FeatureItem[];

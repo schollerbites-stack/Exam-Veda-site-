@@ -23,8 +23,8 @@ export const Contact: React.FC = () => {
 
   const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();
-    const recipient = isEmailSet ? contact.email : "contact@examveda.app";
-    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(message.subject || 'Exam Veda Inquiry')}&body=${encodeURIComponent(`Hi Aarav,\n\n${message.body}\n\nFrom: ${message.name}`)}`;
+    const recipient = isEmailSet ? contact.email : "aaravmalik128@gmail.com";
+    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(message.subject || `${siteConfig.appName} Inquiry`)}&body=${encodeURIComponent(`Hi Aarav,\n\n${message.body}\n\nFrom: ${message.name}`)}`;
     window.location.href = mailtoUrl;
   };
 

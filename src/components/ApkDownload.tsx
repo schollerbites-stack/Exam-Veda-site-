@@ -7,29 +7,29 @@ import {
   Lock,
 } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
-import { ExamVedaLogo } from './ExamVedaLogo';
-import { downloadExamVeda } from '../utils/download';
+import { EduVedaLogo } from './EduVedaLogo';
+import { downloadEduVeda } from '../utils/download';
 
 export const ApkDownload: React.FC = () => {
   const [downloadStarted, setDownloadStarted] = useState(false);
 
   const appMeta = {
-    version: "v2.4.0",
-    releaseDate: "Latest Stable 2026",
-    fileSize: "5.42 MB",
-    packageId: "com.aaravmalik.examveda",
+    version: "v2.0.1",
+    releaseDate: "Latest Release 2026",
+    fileSize: "5.7 MB",
+    packageId: "com.aaravmalik.eduveda",
     minAndroid: "Android 7.0 & above",
     developer: siteConfig.developer.name,
     license: "Free & Ad-Free",
     sha256: "Verified SHA-256 Checksum",
   };
 
-  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+  const handleDownload = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
     setDownloadStarted(true);
-    await downloadExamVeda(e);
+    downloadEduVeda(e);
     setTimeout(() => {
       setDownloadStarted(false);
-    }, 4000);
+    }, 2500);
   };
 
   return (
@@ -43,10 +43,10 @@ export const ApkDownload: React.FC = () => {
             <span>Official Android APK Package</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Download Exam Veda
+            Download {siteConfig.appName}
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300">
-            Get the full version of Exam Veda for Android. Free, secure, and built specifically for competitive exam aspirants.
+            Get the full version of {siteConfig.appName} for Android. Free, secure, and built specifically for competitive exam aspirants.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export const ApkDownload: React.FC = () => {
           <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-10 border border-slate-200/80 dark:border-slate-800 shadow-xl relative overflow-hidden">
             
             {/* Top Accent Gradient Bar */}
-            <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-400" />
+            <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-amber-500" />
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               
@@ -65,7 +65,7 @@ export const ApkDownload: React.FC = () => {
                 {/* Logo & Title */}
                 <div className="flex items-center gap-4">
                   <div className="relative group">
-                    <ExamVedaLogo size={72} className="rounded-2xl shadow-lg shadow-blue-900/30" />
+                    <EduVedaLogo size={72} className="rounded-2xl shadow-lg shadow-blue-900/20" />
                     <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900 flex items-center justify-center text-white text-[10px]">
                       ✓
                     </div>
@@ -109,10 +109,10 @@ export const ApkDownload: React.FC = () => {
                   <button
                     id="apk-primary-download-btn"
                     onClick={handleDownload}
-                    className="w-full inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 shadow-xl shadow-blue-600/30 hover:shadow-2xl hover:shadow-blue-600/40 transition-all text-base active:scale-98 cursor-pointer group"
+                    className="w-full inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-amber-600 hover:from-blue-700 hover:to-amber-700 shadow-xl shadow-blue-600/30 hover:shadow-2xl hover:shadow-blue-600/40 transition-all text-base active:scale-98 cursor-pointer group"
                   >
                     <Download className={`w-5 h-5 transition-transform ${downloadStarted ? 'animate-bounce' : 'group-hover:translate-y-0.5'}`} />
-                    <span>{downloadStarted ? 'Starting Download...' : 'Download APK (5.42 MB)'}</span>
+                    <span>{downloadStarted ? 'Starting Download...' : `Download APK (${appMeta.fileSize})`}</span>
                   </button>
                 </div>
 
@@ -148,7 +148,7 @@ export const ApkDownload: React.FC = () => {
                     </span>
                     <div>
                       <strong className="text-slate-900 dark:text-white block">Tap "Download APK":</strong>
-                      Save the <code className="text-[11px] bg-slate-200 dark:bg-slate-700 px-1 py-0.5 rounded">ExamVeda.apk</code> file to your device.
+                      Save the <code className="text-[11px] bg-slate-200 dark:bg-slate-700 px-1 py-0.5 rounded">{siteConfig.apkFileName || 'Edu-Veda-2.0.1.apk'}</code> file to your device.
                     </div>
                   </li>
 
@@ -168,7 +168,7 @@ export const ApkDownload: React.FC = () => {
                     </span>
                     <div>
                       <strong className="text-slate-900 dark:text-white block">Open & Study:</strong>
-                      Launch Exam Veda and start preparing with Notes, Tests, & PYQs!
+                      Launch Edu Veda and start preparing with Notes, Tests, & PYQs!
                     </div>
                   </li>
                 </ol>

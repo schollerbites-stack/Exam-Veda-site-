@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowUp, ShieldCheck, Heart, Github, Instagram, Mail } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
-import { ExamVedaLogo } from './ExamVedaLogo';
+import { EduVedaLogo } from './EduVedaLogo';
 
 interface FooterProps {
   onOpenPrivacy: () => void;
@@ -29,7 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
           
           {/* Logo & Info */}
           <div className="flex items-center gap-3">
-            <ExamVedaLogo size={38} className="rounded-xl" />
+            <EduVedaLogo size={38} className="rounded-xl" />
             <div>
               <span className="font-bold text-slate-900 dark:text-white text-base">
                 {siteConfig.appName}

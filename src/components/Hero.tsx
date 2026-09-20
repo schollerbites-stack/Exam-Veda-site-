@@ -1,7 +1,7 @@
 import React from 'react';
 import { Download, Compass, Sparkles, CheckCircle, Smartphone, Clock, Award, ShieldCheck, Languages } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
-import { ExamVedaLogo } from './ExamVedaLogo';
+import { EduVedaLogo } from './EduVedaLogo';
 
 export const Hero: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -119,9 +119,9 @@ export const Hero: React.FC = () => {
                 <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-4 text-white">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <ExamVedaLogo size={30} className="rounded-lg shadow-sm" />
+                      <EduVedaLogo size={30} className="rounded-lg shadow-sm" />
                       <div>
-                        <div className="text-xs font-bold leading-tight">Exam Veda</div>
+                        <div className="text-xs font-bold leading-tight">{siteConfig.appName}</div>
                         <div className="text-[10px] text-blue-100 opacity-90">Target: SSC & Banking 2026</div>
                       </div>
                     </div>

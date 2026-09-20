@@ -26,7 +26,7 @@ import {
   Share2,
   UserCheck,
 } from 'lucide-react';
-import { ExamVedaLogo } from './ExamVedaLogo';
+import { EduVedaLogo } from './EduVedaLogo';
 
 // ============================================================================
 // SCREEN 1: COMPLETE LEARNING & VERIFIED PATHWAYS
@@ -48,8 +48,8 @@ export const LearningPathwaysScreen: React.FC<{ isModal?: boolean }> = ({ isModa
         {/* In-App Header */}
         <div className="flex items-center justify-between bg-slate-900/90 border border-slate-800 rounded-xl px-2.5 py-1.5 mb-2.5 shadow-sm">
           <div className="flex items-center gap-1.5">
-            <ExamVedaLogo size={20} className="rounded-md" />
-            <span className="font-bold text-xs text-white">Exam Veda</span>
+            <EduVedaLogo size={20} className="rounded-md" />
+            <span className="font-bold text-xs text-white">Edu Veda</span>
           </div>
           <div className="flex items-center gap-2">
             <Volume2 className="w-3.5 h-3.5 text-slate-400" />
@@ -194,8 +194,8 @@ export const HomeDashboardScreen: React.FC<{ isModal?: boolean }> = ({ isModal =
         {/* In-App Header */}
         <div className="flex items-center justify-between bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 mb-2">
           <div className="flex items-center gap-1.5">
-            <ExamVedaLogo size={20} className="rounded-md" />
-            <span className="font-bold text-xs text-white">Exam Veda</span>
+            <EduVedaLogo size={20} className="rounded-md" />
+            <span className="font-bold text-xs text-white">Edu Veda</span>
           </div>
           <div className="flex items-center gap-2">
             <Volume2 className="w-3.5 h-3.5 text-slate-400" />
@@ -464,8 +464,8 @@ export const ChapterExplorerScreen: React.FC<{ isModal?: boolean }> = ({ isModal
         {/* In-App Header */}
         <div className="flex items-center justify-between bg-slate-900 border border-slate-800 rounded-xl px-2.5 py-1.5 mb-2">
           <div className="flex items-center gap-1.5">
-            <ExamVedaLogo size={20} className="rounded-md" />
-            <span className="font-bold text-xs text-white">Exam Veda</span>
+            <EduVedaLogo size={20} className="rounded-md" />
+            <span className="font-bold text-xs text-white">Edu Veda</span>
           </div>
           <div className="flex items-center gap-2">
             <Volume2 className="w-3.5 h-3.5 text-slate-400" />

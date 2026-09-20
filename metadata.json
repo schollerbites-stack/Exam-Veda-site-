@@ -1,6 +1,6 @@
 {
-  "name": "Exam Veda",
-  "description": "Official website and APK download portal for Exam Veda, the smart companion app for competitive exam preparation.",
+  "name": "Edu Veda",
+  "description": "Official website and APK download portal for Edu Veda, the smart companion app for competitive exam preparation.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

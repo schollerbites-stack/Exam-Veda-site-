@@ -27,7 +27,7 @@ export const AboutDeveloper: React.FC = () => {
             About the Developer
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300">
-            Meet the developer behind Exam Veda.
+            Meet the developer behind {siteConfig.appName}.
           </p>
         </div>
 

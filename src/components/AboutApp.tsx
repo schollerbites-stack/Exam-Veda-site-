@@ -27,7 +27,7 @@ export const AboutApp: React.FC = () => {
           {/* Left Column: Purpose & Philosophy */}
           <div className="lg:col-span-7 space-y-5 bg-white dark:bg-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-              Why Exam Veda Exists
+              Why {siteConfig.appName} Exists
             </h3>
             
             <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">

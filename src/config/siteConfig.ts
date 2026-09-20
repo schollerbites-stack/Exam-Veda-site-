@@ -2,20 +2,20 @@ import { SiteConfig } from '../types';
 
 /**
  * ============================================================================
- * EXAM VEDA — WEBSITE & DOWNLOAD PORTAL CONFIGURATION
+ * EDU VEDA — WEBSITE & DOWNLOAD PORTAL CONFIGURATION
  * ============================================================================
  * 
  * Edit all your app, developer, download links, screenshots, and contact
  * details in this single file.
  */
 
-// 1. APK DOWNLOAD LINK (Direct Download for Android)
-export const APK_DOWNLOAD_URL = "https://files.catbox.moe/t5nqk6.apk";
+// 1. APK DOWNLOAD LINK (Direct GitHub Release for Android)
+export const APK_DOWNLOAD_URL = "https://github.com/schollerbites-stack/Edu-Veda-apk-/releases/download/v1.2.0/Edu-Veda-2.0.1.apk";
 
 // 2. DEVELOPER PHOTO (Supports local asset /images/aarav.svg, external URL, or user photo)
 export const DEVELOPER_PHOTO = "/images/aarav.svg";
 
-// 3. APP SCREENSHOTS (Official Exam Veda App Showcase)
+// 3. APP SCREENSHOTS (Official Edu Veda App Showcase)
 export const APP_SCREENSHOTS = [
   {
     id: "screen-home-dashboard",
@@ -61,23 +61,24 @@ export const APP_SCREENSHOTS = [
 
 // 4. MAIN SITE CONFIGURATION OBJECT
 export const siteConfig: SiteConfig = {
-  appName: "Exam Veda",
+  appName: "Edu Veda",
   appTagline: "Your Smart Companion for Competitive Exam Preparation",
-  appShortDescription: "Exam Veda is a study app for students preparing for competitive and government exams. It provides Notes, Mock Tests, PYQs, quizzes and subject/topic-wise study material in a simple Hindi + English friendly interface.",
+  appShortDescription: "Edu Veda is a study app for students preparing for competitive and government exams. It provides Notes, Mock Tests, PYQs, quizzes and subject/topic-wise study material in a simple Hindi + English friendly interface.",
   appType: "Competitive Exam Preparation Android App",
   
   apkDownloadUrl: APK_DOWNLOAD_URL,
-  apkDownloadNote: "Download and install the latest version of Exam Veda.",
+  apkDownloadNote: "Download and install the latest version of Edu Veda.",
+  apkFileName: "Edu-Veda-2.0.1.apk",
 
   // Developer Profile
   developer: {
     name: "Aarav Malik",
-    role: "Android Developer & Creator of Exam Veda",
+    role: "Android Developer & Creator of Edu Veda",
     location: "India",
     photoUrl: DEVELOPER_PHOTO,
     bio: [
       "Passionate Android developer dedicated to building accessible, student-centric digital learning tools.",
-      "Created Exam Veda to solve the challenge of fragmented study resources for government and competitive exam aspirants by unifying high-quality notes, mock exams, and previous year papers into a distraction-free mobile experience."
+      "Created Edu Veda to solve the challenge of fragmented study resources for government and competitive exam aspirants by unifying high-quality notes, mock exams, and previous year papers into a distraction-free mobile experience."
     ],
     skills: ["Android Development", "Kotlin", "Clean Architecture", "UI/UX Design", "EdTech Solutions"],
     email: "aaravmalik128@gmail.com",
@@ -87,7 +88,7 @@ export const siteConfig: SiteConfig = {
     telegramUrl: ""   // Optional
   },
 
-  // 6 Real Features of Exam Veda
+  // 6 Real Features of Edu Veda
   features: [
     {
       id: "notes",
@@ -172,13 +173,13 @@ export const siteConfig: SiteConfig = {
   // App Screenshots
   screenshots: APP_SCREENSHOTS,
 
-  // About Exam Veda Information
+  // About Edu Veda Information
   aboutApp: {
     title: "Empowering Competitive Exam Aspirants",
     description: [
-      "Exam Veda was built with a singular mission: to make competitive and government exam preparation more structured, accessible, and organized.",
-      "Instead of juggling scattered PDFs, unorganized Telegram groups, and slow websites, Exam Veda brings authentic previous year questions, structured notes, timed mock assessments, and topic-wise practice into one intuitive Android app.",
-      "Whether you are revising on the commute or attempting a full-length timed mock test at home, Exam Veda is engineered to be lightweight, responsive, and easy to use in both Hindi and English."
+      "Edu Veda was built with a singular mission: to make competitive and government exam preparation more structured, accessible, and organized.",
+      "Instead of juggling scattered PDFs, unorganized Telegram groups, and slow websites, Edu Veda brings authentic previous year questions, structured notes, timed mock assessments, and topic-wise practice into one intuitive Android app.",
+      "Whether you are revising on the commute or attempting a full-length timed mock test at home, Edu Veda is engineered to be lightweight, responsive, and easy to use in both Hindi and English."
     ],
     targetAudience: [
       "Staff Selection Commission (SSC CGL, CHSL, CPO, MTS, GD)",
@@ -223,11 +224,11 @@ export const siteConfig: SiteConfig = {
     sections: [
       {
         title: "1. Information We Collect",
-        content: "Exam Veda is built with user privacy as a priority. The app stores study progress, bookmarks, and quiz scores locally on your device. We do not sell or monetize personal student data."
+        content: "Edu Veda is built with user privacy as a priority. The app stores study progress, bookmarks, and quiz scores locally on your device. We do not sell or monetize personal student data."
       },
       {
         title: "2. App Permissions",
-        content: "Exam Veda requires minimal device permissions strictly necessary for app functionality, such as standard Internet access to download updated notes and mock tests, and local storage access for offline revision."
+        content: "Edu Veda requires minimal device permissions strictly necessary for app functionality, such as standard Internet access to download updated notes and mock tests, and local storage access for offline revision."
       },
       {
         title: "3. Third-Party Services",

@@ -1,26 +1,32 @@
-<svg viewBox="0 0 400 400" width="400" height="400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 512 512" width="512" height="512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stopColor="#0B1A3F" />
-      <stop offset="100%" stopColor="#07132F" />
+    <linearGradient id="bgGradientFav" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#F4F7FB" />
     </linearGradient>
-    <linearGradient id="bookPageLeft" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#0066FF" />
-      <stop offset="100%" stopColor="#0099FF" />
+    <linearGradient id="capGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#12357A" />
+      <stop offset="100%" stopColor="#07183D" />
     </linearGradient>
-    <linearGradient id="bookPageRight" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#0077FF" />
-      <stop offset="100%" stopColor="#25A0FF" />
+    <linearGradient id="orangeGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFA000" />
+      <stop offset="100%" stopColor="#E65100" />
+    </linearGradient>
+    <linearGradient id="bookGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0077EE" />
+      <stop offset="100%" stopColor="#0A2D6C" />
     </linearGradient>
   </defs>
-  <rect width="400" height="400" rx="88" fill="url(#bgGrad)"/>
-  <g transform="translate(0, -10)">
-    <polygon points="200,68 316,118 200,168 84,118" fill="#FFFFFF"/>
-    <path d="M138 142 L138 174 C138 198 262 198 262 174 L262 142 C243 158 222 166 200 166 C178 166 157 158 138 142 Z" fill="#E2E8F0"/>
-    <path d="M74 168 L104 228 L170 252 L200 274 L230 252 L296 228 L326 168 L308 172 L288 214 L230 236 L200 252 L170 236 L112 214 L92 172 Z" fill="#FFFFFF"/>
-    <path d="M102 160 C130 180 162 190 192 198 L192 266 C162 254 130 240 102 216 Z" fill="url(#bookPageLeft)"/>
-    <path d="M298 160 C270 180 238 190 208 198 L208 266 C238 254 270 240 298 216 Z" fill="url(#bookPageRight)"/>
+  <rect width="512" height="512" rx="112" fill="url(#bgGradientFav)" />
+  <g transform="translate(0, -6)">
+    <polygon points="256,76 388,126 256,176 124,126" fill="url(#capGradFav)" />
+    <path d="M184 150 L184 184 C184 208 328 208 328 184 L328 150 C306 168 282 176 256 176 C230 176 206 168 184 150 Z" fill="#091E47" />
+    <circle cx="256" cy="180" r="24" fill="url(#orangeGradFav)" />
+    <path d="M256 280 C242 245 196 205 152 172 C178 198 220 236 248 274 Z" fill="url(#orangeGradFav)" />
+    <path d="M256 280 C270 245 316 205 360 172 C334 198 292 236 264 274 Z" fill="url(#orangeGradFav)" />
+    <path d="M96 268 C144 274 198 286 252 314 L252 334 C194 300 138 290 88 284 Z" fill="url(#bookGradFav)" />
+    <path d="M416 268 C368 274 314 286 260 314 L260 334 C318 300 374 290 424 284 Z" fill="url(#bookGradFav)" />
   </g>
-  <text x="200" y="312" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="56" font-weight="900">Exam</text>
-  <text x="200" y="370" text-anchor="middle" fill="#2997FF" font-family="sans-serif" font-size="60" font-weight="900">Veda</text>
+  <text x="144" y="420" text-anchor="middle" fill="#0C2556" font-family="sans-serif" font-size="76" font-weight="900">Edu</text>
+  <text x="328" y="420" text-anchor="middle" fill="#FF8500" font-family="sans-serif" font-size="76" font-weight="900">Veda</text>
 </svg>

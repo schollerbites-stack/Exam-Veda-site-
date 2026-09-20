@@ -10,6 +10,7 @@ import { AboutDeveloper } from './components/AboutDeveloper';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
+import { ScrollReveal } from './components/ScrollReveal';
 
 export default function App() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
@@ -24,25 +25,39 @@ export default function App() {
         {/* Main Content Sections */}
         <main className="flex-1">
           {/* Hero Section */}
-          <Hero />
+          <ScrollReveal direction="up" distance={16} duration={500}>
+            <Hero />
+          </ScrollReveal>
 
           {/* Download APK Section */}
-          <ApkDownload />
+          <ScrollReveal direction="up" distance={24} duration={600}>
+            <ApkDownload />
+          </ScrollReveal>
 
           {/* Features Section */}
-          <Features />
+          <ScrollReveal direction="up" distance={24} duration={600}>
+            <Features />
+          </ScrollReveal>
 
           {/* Screenshots Gallery Section */}
-          <Screenshots />
+          <ScrollReveal direction="up" distance={24} duration={600}>
+            <Screenshots />
+          </ScrollReveal>
 
           {/* About Exam Veda */}
-          <AboutApp />
+          <ScrollReveal direction="up" distance={24} duration={600}>
+            <AboutApp />
+          </ScrollReveal>
 
           {/* About Developer Aarav Malik */}
-          <AboutDeveloper />
+          <ScrollReveal direction="up" distance={24} duration={600}>
+            <AboutDeveloper />
+          </ScrollReveal>
 
           {/* Contact & Social Links */}
-          <Contact />
+          <ScrollReveal direction="up" distance={24} duration={600}>
+            <Contact />
+          </ScrollReveal>
         </main>
 
         {/* Footer */}

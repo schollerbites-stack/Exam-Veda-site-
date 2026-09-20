@@ -1,38 +1,118 @@
-<svg viewBox="0 0 400 400" width="400" height="400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 512 512" width="512" height="512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stopColor="#0B1A3F" />
-      <stop offset="100%" stopColor="#07132F" />
+    <!-- Background subtle gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#F4F7FB" />
     </linearGradient>
-    <linearGradient id="bookPageLeft" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#0066FF" />
-      <stop offset="100%" stopColor="#0099FF" />
+
+    <!-- Navy Graduation Cap Gradient -->
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#12357A" />
+      <stop offset="50%" stopColor="#0B2559" />
+      <stop offset="100%" stopColor="#07183D" />
     </linearGradient>
-    <linearGradient id="bookPageRight" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#0077FF" />
-      <stop offset="100%" stopColor="#25A0FF" />
+
+    <!-- Orange Figure Gradient -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFA000" />
+      <stop offset="60%" stopColor="#FF6D00" />
+      <stop offset="100%" stopColor="#E65100" />
     </linearGradient>
+
+    <!-- Book Left Pages Gradient -->
+    <linearGradient id="bookLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0066D6" />
+      <stop offset="50%" stopColor="#004BA8" />
+      <stop offset="100%" stopColor="#0A2D6C" />
+    </linearGradient>
+
+    <!-- Book Right Pages Gradient -->
+    <linearGradient id="bookRightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0080FF" />
+      <stop offset="60%" stopColor="#0057B8" />
+      <stop offset="100%" stopColor="#0A3078" />
+    </linearGradient>
+
+    <!-- Book Highlight Glow -->
+    <linearGradient id="bookHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#38BDF8" />
+      <stop offset="100%" stopColor="#0284C7" />
+    </linearGradient>
+
+    <!-- Edu Text Navy -->
+    <linearGradient id="eduTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#0C2556" />
+      <stop offset="100%" stopColor="#07183D" />
+    </linearGradient>
+
+    <!-- Veda Text Orange -->
+    <linearGradient id="vedaTextGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FF8500" />
+      <stop offset="100%" stopColor="#E65100" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" floodColor="#0F172A" floodOpacity="0.08" />
+    </filter>
   </defs>
 
-  <!-- Squircle Background -->
-  <rect width="400" height="400" rx="88" fill="url(#bgGrad)"/>
+  <!-- Squircle Base Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGradient)" filter="url(#softShadow)" />
+  <rect width="508" height="508" x="2" y="2" rx="110" stroke="#E2E8F0" stroke-width="3" fill="none" opacity="0.8" />
 
-  <g transform="translate(0, -10)">
-    <!-- Graduation Cap -->
-    <polygon points="200,68 316,118 200,168 84,118" fill="#FFFFFF"/>
-    <path d="M138 142 L138 174 C138 198 262 198 262 174 L262 142 C243 158 222 166 200 166 C178 166 157 158 138 142 Z" fill="#E2E8F0"/>
-    <circle cx="200" cy="118" r="5" fill="#CBD5E1" />
-    <path d="M200 118 Q270 126 276 172" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" fill="none"/>
-    <polygon points="272,170 280,170 283,196 269,196" fill="#FFFFFF"/>
+  <!-- MAIN LOGO ARTWORK -->
+  <g transform="translate(0, -6)">
+    
+    <!-- GRADUATION CAP (TOP) -->
+    <!-- Cap Diamond -->
+    <polygon points="256,76 388,126 256,176 124,126" fill="url(#capGrad)" />
+    <!-- Cap Brim / Skull Base -->
+    <path d="M184 150 L184 184 C184 208 328 208 328 184 L328 150 C306 168 282 176 256 176 C230 176 206 168 184 150 Z" fill="#091E47" />
+    
+    <!-- Cap Tassel -->
+    <circle cx="256" cy="126" r="6" fill="#1E40AF" />
+    <path d="M256 126 Q340 134 350 170" stroke="#0B2559" stroke-width="4.5" stroke-linecap="round" fill="none" />
+    <!-- Tassel Brush -->
+    <path d="M344 168 L354 168 L358 198 L340 198 Z" fill="#0A2454" />
+    <circle cx="349" cy="168" r="4" fill="#0F3375" />
 
-    <!-- Open Book -->
-    <path d="M74 168 L104 228 L170 252 L200 274 L230 252 L296 228 L326 168 L308 172 L288 214 L230 236 L200 252 L170 236 L112 214 L92 172 Z" fill="#FFFFFF"/>
-    <path d="M102 160 C130 180 162 190 192 198 L192 266 C162 254 130 240 102 216 Z" fill="url(#bookPageLeft)"/>
-    <path d="M298 160 C270 180 238 190 208 198 L208 266 C238 254 270 240 298 216 Z" fill="url(#bookPageRight)"/>
-    <line x1="200" y1="198" x2="200" y2="268" stroke="#0B1A3F" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- ORANGE LEARNER / RISING STUDENT -->
+    <!-- Head -->
+    <circle cx="256" cy="180" r="24" fill="url(#orangeGrad)" />
+    <!-- Reaching Arms / Dynamic Wings (V-Shape) -->
+    <path d="M256 280 C242 245 196 205 152 172 C178 198 220 236 248 274 Z" fill="url(#orangeGrad)" />
+    <path d="M256 280 C270 245 316 205 360 172 C334 198 292 236 264 274 Z" fill="url(#orangeGrad)" />
+    <path d="M228 262 L256 220 L284 262 Z" fill="#FFA000" opacity="0.9" />
+
+    <!-- OPEN BOOK (LAYERED BLUE & CYAN PAGES) -->
+    <!-- Left Top Layer -->
+    <path d="M124 222 C168 244 212 254 252 260 L252 308 C208 300 162 284 118 258 Z" fill="url(#bookHighlight)" />
+    <!-- Left Main Wing -->
+    <path d="M96 268 C144 274 198 286 252 314 L252 334 C194 300 138 290 88 284 Z" fill="url(#bookLeftGrad)" />
+    
+    <!-- Right Top Layer -->
+    <path d="M388 222 C344 244 300 254 260 260 L260 308 C304 300 350 284 394 258 Z" fill="url(#bookHighlight)" />
+    <!-- Right Main Wing -->
+    <path d="M416 268 C368 274 314 286 260 314 L260 334 C318 300 374 290 424 284 Z" fill="url(#bookRightGrad)" />
+
+    <!-- Center Spine Crease -->
+    <path d="M254 262 L258 262 L258 338 L254 338 Z" fill="#0B2559" />
+
+    <!-- Lower Page Flourish -->
+    <path d="M102 278 C152 284 204 298 256 322 C308 298 360 284 410 278 L416 288 C362 296 310 312 256 338 C202 312 150 296 96 288 Z" fill="#08204D" />
   </g>
 
-  <!-- Typography -->
-  <text x="200" y="312" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="900" letter-spacing="-1.5">Exam</text>
-  <text x="200" y="370" text-anchor="middle" fill="#2997FF" font-family="system-ui, -apple-system, sans-serif" font-size="60" font-weight="900" letter-spacing="-1.5">Veda</text>
+  <!-- TYPOGRAPHY BRANDING: "Edu Veda" -->
+  <g transform="translate(0, 420)">
+    <!-- "Edu" in Midnight Navy -->
+    <text x="144" y="0" text-anchor="middle" fill="url(#eduTextGrad)" font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">
+      Edu
+    </text>
+
+    <!-- "Veda" in Gradient Orange -->
+    <text x="328" y="0" text-anchor="middle" fill="url(#vedaTextGrad)" font-family="system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">
+      Veda
+    </text>
+  </g>
 </svg>
